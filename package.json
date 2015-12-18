@@ -1,0 +1,28 @@
+{
+  "name": "elana_portfolio",
+  "version": "1.0.0",
+  "description": "elana portfolio site",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekopelevich/portfolio.git"
+  },
+  "keywords": [
+    "full",
+    "stack",
+    "web",
+    "developer"
+  ],
+  "author": "Elana Kopelevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekopelevich/portfolio/issues"
+  },
+  "homepage": "https://github.com/ekopelevich/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
