@@ -15,7 +15,7 @@ html, body {
 header {
   flex: 1;
   width: 400px;
-  min-height: 100vh;
+  min-height: 90vh;
   color: #fff;
   padding: 20px;
   background-color: #008e8e;
@@ -45,5 +45,4 @@ main {
 
 footer {
   flex: 2;
-  height: 40px;
   background-color: #aff600; }
