@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <title>Elana Kopelevich</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body ng-controller="MainController">
+    <div id="container">
+      <header>
+        <nav>
+          <h1>Elana Kopelevich</h1>
+          <h3>Full Stack Web Developer</h3>
+          <p>
+            w/ marketing and design skills.
+          </p>
+          <div class="connect">
+            <a href="https://github.com/ekopelevich"><img src="./images/github.png" alt="github" /></a>
+            <a href="https://twitter.com/elanaLynn"><img src="./images/twitter.png" alt="Twitter" /></a>
+            <a href="https://linkedin.com/in/elanakopelevich"><img src="./images/linkedin.png" alt="LinkedIn" /></a>
+          </div>
+          <ul>
+            <li ng-click="showAbout = !showAbout">About Me</li>
+            <li ng-click="showProjects = !showProjects">Projects</li>
+            <li ng-click="showResume = !showResume">Resume</li>
+            <a href="http://reasonabout.co" target="_blank"><li>Blog with Friends</li></a>
+            <a href="http://elana.kopelevich.org" target="_blank"><li>Illustration</li></a>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        
+        <article id="projects" ng-show="showProjects">
+          <h2>Projects</h2>
+          <div class="project" ng-repeat="project in projects">
+            <h2 ng-cloak>{{ name }}</h2>
+            <p ng-cloak>{{ description }}</p>
+            <img ng-cloak src="{{thumbnail}}" alt="project thumbnail" />
+          </div>
+        </article>
+      </main>
+    </div>
+    <footer>
+      <p>Get in touch: 720.427.2892 | ekopelevich@gmail.com</p>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.js"></script>
+    <script type="text/javascript" src="./javascript/app.js"></script>
+    <script type="text/javascript" src="./javascript/controllers/MainController.js"></script>
+  </body>
+</html>
