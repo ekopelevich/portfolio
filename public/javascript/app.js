@@ -1,10 +1,10 @@
 var app = angular.module('portfolioApp', ['ui.router', 'ngAnimate']);
 
 app.config(function($stateProvider, $urlRouterProvider){
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/about');
   $stateProvider
     .state('about', {
-      url: '/',
+      url: '/about',
       templateUrl: '../partials/about.html'
     })
     .state('projects', {

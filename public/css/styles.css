@@ -9,23 +9,34 @@ html, body {
   flex-direction: column;
   color: #444444; }
 
-#container {
-  display: flex;
-  flex: 1; }
-
-#bio {
-  width: 90%; }
-
 header {
   flex: 1;
   flex-grow: 100%;
   color: #fff;
   padding: 20px;
-  background: url("../images/background.jpg");
+  background: url("../assets/background.jpg");
   box-shadow: 5px 0 5px #888;
-  z-index: 1000; }
+  z-index: 100; }
+  header h1 {
+    font-size: 2em;
+    font-weight: 600; }
+  header h2 {
+    color: #92dce0;
+    font-size: 1.34em;
+    font-weight: 600; }
+  header a {
+    color: #fff; }
+  header .zmdi {
+    color: #fff;
+    font-size: 2em;
+    margin-right: 10px; }
   header li {
     cursor: pointer; }
+
+h2 {
+  color: #046078;
+  font-size: 2em;
+  font-weight: 600; }
 
 h3 {
   margin-top: -5px;
@@ -35,30 +46,48 @@ ul {
   margin-top: 30px; }
 
 li {
-  line-height: 3em;
+  line-height: 2em;
   color: #fff;
   list-style: none; }
 
-.connect {
-  display: flex; }
+#container {
+  display: flex;
+  flex: 1; }
 
-.connect a {
-  margin: 5px; }
+#about {
+  width: 90%; }
 
 main {
-  flex: 2;
-  background: url("../images/subtle_white_mini_waves.png") repeat;
+  flex: 3;
+  background: url("../assets/subtle_white_mini_waves.png") repeat;
   padding: 20px 0 0 40px; }
 
 #projects {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 90%; }
 
-.project {
-  background-color: #ff9100;
-  margin: 20px;
-  width: 120px;
-  height: 120px; }
+.project-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px; }
+  .project-container img {
+    width: 60px;
+    height: 60px; }
+  .project-container .projects-image-btn {
+    display: flex;
+    flex-direction: column; }
+  .project-container .details-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; }
+    .project-container .details-container h3 {
+      color: #505050;
+      font-size: 1.5em; }
+      .project-container .details-container h3 span {
+        font-size: .6em;
+        font-style: italic;
+        color: #046078; }
 
 footer {
   display: flex;
@@ -66,4 +95,5 @@ footer {
   height: 5vh;
   padding: 3px;
   background-color: #464646;
-  color: #fff; }
+  color: #fff;
+  z-index: 1000; }

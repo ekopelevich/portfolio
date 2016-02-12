@@ -4,43 +4,33 @@
     <title>Elana Kopelevich</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <body ng-controller="MainController">
+  <body>
     <div id="container">
       <header>
         <nav>
-          <h1>Elana Kopelevich</h1>
-          <h3>Full Stack Web Developer</h3>
+          <a href="/#/about"><h1>Elana Kopelevich</h1></a>
+          <h2>Full Stack Web Developer</h2>
           <p>
             w/ marketing and design skills.
           </p>
-          <div class="connect">
-            <a href="https://github.com/ekopelevich"><img src="./images/github.png" alt="github" /></a>
-            <a href="https://twitter.com/elanaLynn"><img src="./images/twitter.png" alt="Twitter" /></a>
-            <a href="https://linkedin.com/in/elanakopelevich"><img src="./images/linkedin.png" alt="LinkedIn" /></a>
-          </div>
+          <a href="https://github.com/ekopelevich"><i class="zmdi zmdi-github-alt"></i>
+          <a href="https://twitter.com/elanaLynn"><i class="zmdi zmdi-twitter"></i></a>
+          <a href="https://linkedin.com/in/elanakopelevich"><i class="zmdi zmdi-linkedin"></i></a>
           <ul>
-            <li ng-click="showAbout = !showAbout">About Me</li>
-            <li ng-click="showProjects = !showProjects">Projects</li>
-            <li ng-click="showResume = !showResume">Resume</li>
+            <li ui-sref="about">About Me</li>
+            <li ui-sref="projects">Projects</li>
+            <li ui-sref="resume">Resume</li>
             <a href="http://reasonabout.co" target="_blank"><li>Blog with Friends</li></a>
-            <a href="http://elana.kopelevich.org" target="_blank"><li>Illustration</li></a>
+            <a href="http://elana.kopelevich.org" target="_blank"><li>Illustrations</li></a>
           </ul>
         </nav>
       </header>
-      <main>
-        
-        <article id="projects" ng-show="showProjects">
-          <h2>Projects</h2>
-          <div class="project" ng-repeat="project in projects">
-            <h2 ng-cloak>{{ name }}</h2>
-            <p ng-cloak>{{ description }}</p>
-            <img ng-cloak src="{{thumbnail}}" alt="project thumbnail" />
-          </div>
-        </article>
-      </main>
+      <main ui-view ng-controller="MainController"></main>
     </div>
     <footer>
       <p>Get in touch: 720.427.2892 | ekopelevich@gmail.com</p>
@@ -52,5 +42,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.js"></script>
     <script type="text/javascript" src="./javascript/app.js"></script>
     <script type="text/javascript" src="./javascript/controllers/MainController.js"></script>
+    <script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
   </body>
 </html>
