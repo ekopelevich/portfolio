@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.png">
   </head>
   <body>
     <header>
       <nav>
-        <a href="/#/about"><h1>Elana Kopelevich</h1></a>
+        <a ui-sref="about"><h1>Elana Kopelevich</h1></a>
         <h2>Full Stack Web Developer</h2>
         <p>
           w/ marketing and design skills.
         </p>
-        <a href="https://github.com/ekopelevich"><i class="zmdi zmdi-github-alt"></i>
-        <a href="https://twitter.com/elanaLynn"><i class="zmdi zmdi-twitter"></i></a>
-        <a href="https://linkedin.com/in/elanakopelevich"><i class="zmdi zmdi-linkedin"></i></a>
+        <a href="https://github.com/ekopelevich" target="_blank"><i class="zmdi zmdi-github-alt"></i>
+        <a href="https://twitter.com/elanaLynn" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
+        <a href="https://linkedin.com/in/elanakopelevich" target="_blank"><i class="zmdi zmdi-linkedin"></i></a>
         <ul>
           <li ui-sref="about">About Me</li>
           <li ui-sref="projects">Projects</li>
-          <li ui-sref="resume">Resume</li>
-          <a href="http://reasonabout.co" target="_blank"><li>Blog with Friends</li></a>
-          <a href="http://elana.kopelevich.org" target="_blank"><li>Illustrations</li></a>
+          <li><a href="assets/kopelevich_resume_2016_FEB.pdf" target="_blank">Resume</a></li>
+          <li><a href="http://reasonabout.co" target="_blank">Blog with Friends</a></li>
+          <li><a href="http://elana.kopelevich.org" target="_blank">Illustrations</a></li>
         </ul>
       </nav>
     </header>
@@ -42,8 +43,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.js"></script>
-    <script type="text/javascript" src="./javascript/app.js"></script>
-    <script type="text/javascript" src="./javascript/controllers/MainController.js"></script>
+    <script type="text/javascript" src="javascripts/app.js"></script>
+    <script type="text/javascript" src="javascripts/controllers/MainController.js"></script>
     <script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
   </body>
 </html>

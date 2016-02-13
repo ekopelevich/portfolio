@@ -15,14 +15,14 @@ html, body {
 #wrap {
   display: flex;
   flex-direction: column;
-  flex: 3;
   min-height: 100%;
   height: auto;
+  min-width: 100%;
   margin: 0 auto -40px;
-  padding: 0 0 40px; }
+  padding: 0 0 40px;
+  background: url("../assets/subtle_white_mini_waves.png") repeat; }
 
 main {
-  background: url("../assets/subtle_white_mini_waves.png") repeat;
   padding: 20px 0 0 40px;
   min-height: 95vh;
   overflow: scroll; }
@@ -85,6 +85,9 @@ li {
   flex-direction: column;
   width: 90%; }
 
+#resume {
+  width: 90%; }
+
 .project-container {
   display: flex;
   flex-direction: row;
@@ -106,3 +109,12 @@ li {
         font-size: .6em;
         font-style: italic;
         color: #046078; }
+
+.strong {
+  font-weight: 600; }
+
+.ng-enter {
+  animation: fadeInLeft 1s; }
+
+.ng-leave {
+  animation: fadeOutRight 1s; }
