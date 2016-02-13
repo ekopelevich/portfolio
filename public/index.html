@@ -10,31 +10,33 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="/#/about"><h1>Elana Kopelevich</h1></a>
+        <h2>Full Stack Web Developer</h2>
+        <p>
+          w/ marketing and design skills.
+        </p>
+        <a href="https://github.com/ekopelevich"><i class="zmdi zmdi-github-alt"></i>
+        <a href="https://twitter.com/elanaLynn"><i class="zmdi zmdi-twitter"></i></a>
+        <a href="https://linkedin.com/in/elanakopelevich"><i class="zmdi zmdi-linkedin"></i></a>
+        <ul>
+          <li ui-sref="about">About Me</li>
+          <li ui-sref="projects">Projects</li>
+          <li ui-sref="resume">Resume</li>
+          <a href="http://reasonabout.co" target="_blank"><li>Blog with Friends</li></a>
+          <a href="http://elana.kopelevich.org" target="_blank"><li>Illustrations</li></a>
+        </ul>
+      </nav>
+    </header>
     <div id="container">
-      <header>
-        <nav>
-          <a href="/#/about"><h1>Elana Kopelevich</h1></a>
-          <h2>Full Stack Web Developer</h2>
-          <p>
-            w/ marketing and design skills.
-          </p>
-          <a href="https://github.com/ekopelevich"><i class="zmdi zmdi-github-alt"></i>
-          <a href="https://twitter.com/elanaLynn"><i class="zmdi zmdi-twitter"></i></a>
-          <a href="https://linkedin.com/in/elanakopelevich"><i class="zmdi zmdi-linkedin"></i></a>
-          <ul>
-            <li ui-sref="about">About Me</li>
-            <li ui-sref="projects">Projects</li>
-            <li ui-sref="resume">Resume</li>
-            <a href="http://reasonabout.co" target="_blank"><li>Blog with Friends</li></a>
-            <a href="http://elana.kopelevich.org" target="_blank"><li>Illustrations</li></a>
-          </ul>
-        </nav>
-      </header>
-      <main ui-view ng-controller="MainController"></main>
+      <div id="wrap">
+        <main ui-view ng-controller="MainController"></main>
+      </div>
+      <footer>
+        <p>Get in touch: 720.427.2892 | ekopelevich@gmail.com</p>
+      </footer>
     </div>
-    <footer>
-      <p>Get in touch: 720.427.2892 | ekopelevich@gmail.com</p>
-    </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
