@@ -23,7 +23,7 @@ html, body {
   background: url("../assets/subtle_white_mini_waves.png") repeat; }
 
 main {
-  padding: 20px 0 0 40px;
+  padding: 20px 0 40px 40px;
   min-height: 95vh;
   overflow: scroll; }
 
@@ -38,7 +38,7 @@ footer {
   z-index: 1000; }
 
 header {
-  min-width: 320px;
+  min-width: 25vw;
   color: #fff;
   padding: 20px;
   background: url("../assets/background.jpg");
@@ -77,15 +77,10 @@ li {
   color: #fff;
   list-style: none; }
 
-#about {
-  width: 90%; }
+.button {
+  margin-right: 10px; }
 
-#projects {
-  display: flex;
-  flex-direction: column;
-  width: 90%; }
-
-#resume {
+.content {
   width: 90%; }
 
 .project-container {
@@ -93,8 +88,9 @@ li {
   flex-direction: row;
   margin-top: 20px; }
   .project-container img {
-    width: 60px;
-    height: 60px; }
+    width: 62px;
+    height: 62px;
+    margin-bottom: 10px; }
   .project-container .projects-image-btn {
     display: flex;
     flex-direction: column; }
@@ -110,8 +106,16 @@ li {
         font-style: italic;
         color: #046078; }
 
+.project-asset {
+  max-width: 100%;
+  min-width: 25%;
+  margin-bottom: 40px; }
+
 .strong {
   font-weight: 600; }
+
+.italic {
+  font-style: italic; }
 
 .ng-enter {
   animation: fadeInLeft 1s; }

@@ -1,9 +1,9 @@
-<article id="projects">
+<article class="content">
   <h2>Projects</h2>
   <div class="project-container" ng-repeat="project in projects">
     <div class="projects-image-btn">
-      <img class="thumbnail" ng-cloak ng-src={{project.thumbnail}} alt="project thumbnail" />
-      <a href="{{ project.details  }}"><button class="small primary hollow button" ng-cloak>Details</button></a>
+      <img ng-cloak ng-src="{{ project.thumbnail }}" alt="project thumbnail" />
+      <a ui-sref="{{ project.details  }}"><button class="small primary hollow button" ng-cloak>Details</button></a>
     </div>
     <div class="details-container">
       <h3 ng-cloak>{{ project.name }} <span ng-cloak>{{ project.technologies }}</span></h3>

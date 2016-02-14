@@ -26,7 +26,7 @@ html, body {
 }
 
 main {
-  padding: 20px 0 0 40px;
+  padding: 20px 0 40px 40px;
   min-height: 95vh;
   overflow: scroll;
 }
@@ -43,7 +43,7 @@ footer {
 }
 
 header {
-  min-width: 320px;
+  min-width: 25vw;
   color: #fff;
   padding: 20px;
   background: url('../assets/background.jpg');
@@ -97,17 +97,11 @@ li {
   list-style: none;
 }
 
-#about {
-  width: 90%;
+.button {
+  margin-right: 10px;
 }
 
-#projects {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-
-#resume {
+.content {
   width: 90%;
 }
 
@@ -117,8 +111,9 @@ li {
   margin-top: 20px;
 
   img {
-    width: 60px;
-    height: 60px;
+    width: 62px;
+    height: 62px;
+    margin-bottom: 10px;
   }
 
   .projects-image-btn {
@@ -144,8 +139,18 @@ li {
   }
 }
 
+.project-asset {
+  max-width: 100%;
+  min-width: 25%;
+  margin-bottom: 40px;
+}
+
 .strong {
   font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
 }
 
 // Animations
