@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="portfolioApp">
   <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elana Kopelevich</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -11,7 +12,7 @@
     <link rel="icon" href="assets/favicon.png">
   </head>
   <body>
-    <header>
+    <header class="small-12 large-expand shrink columns">
       <nav>
         <a ui-sref="about"><h1>Elana Kopelevich</h1></a>
         <h2>Full Stack Web Developer</h2>
@@ -21,12 +22,19 @@
         <a href="https://github.com/ekopelevich" target="_blank"><i class="zmdi zmdi-github-alt"></i>
         <a href="https://twitter.com/elanaLynn" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
         <a href="https://linkedin.com/in/elanakopelevich" target="_blank"><i class="zmdi zmdi-linkedin"></i></a>
-        <ul>
+        <ul id="large-menu">
           <li ui-sref="about">About Me</li>
           <li ui-sref="projects">Projects</li>
           <li><a href="assets/kopelevich_resume_2016_FEB.pdf" target="_blank">Resume</a></li>
           <li><a href="http://reasonabout.co" target="_blank">Blog with Friends</a></li>
           <li><a href="http://elana.kopelevich.org" target="_blank">Illustrations</a></li>
+        </ul>
+        <ul id="mobile-menu">
+          <li ui-sref="about">About</li>
+          <li ui-sref="projects">Work</li>
+          <li><a href="assets/kopelevich_resume_2016_FEB.pdf" target="_blank">Resume</a></li>
+          <li><a href="http://reasonabout.co" target="_blank">Blog</a></li>
+          <li><a href="http://elana.kopelevich.org" target="_blank">Art</a></li>
         </ul>
       </nav>
     </header>
@@ -35,7 +43,7 @@
         <main ui-view ng-controller="MainController"></main>
       </div>
       <footer>
-        <p>Get in touch: 720.427.2892 | ekopelevich@gmail.com</p>
+        <p>Get in touch: 720.427.2892 <span class="pipe">| </span>ekopelevich@gmail.com</p>
       </footer>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>

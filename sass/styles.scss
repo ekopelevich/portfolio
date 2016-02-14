@@ -32,18 +32,18 @@ main {
 }
 
 footer {
-  min-height: 5vh;
-  max-height: 100%;
-  padding: 10px;
+  min-height: 60px;
   display: flex;
   justify-content: center;
   background-color: #464646;
   color: #fff;
   z-index: 1000;
+  p {
+      padding: 10px;
+  }
 }
 
 header {
-  min-width: 25vw;
   color: #fff;
   padding: 20px;
   background: url('../assets/background.jpg');
@@ -69,6 +69,10 @@ header {
     color: #fff;
     font-size: 2em;
     margin-right: 10px;
+  }
+
+  #mobile-menu {
+    display: none;
   }
 
   li {
@@ -137,6 +141,10 @@ li {
       }
     }
   }
+
+  .details-link {
+    display: none;
+  }
 }
 
 .project-asset {
@@ -160,4 +168,56 @@ li {
 
 .ng-leave {
   animation: fadeOutRight 1s;
+}
+
+// Media Queries
+
+@media (max-width: 640px) {
+  html, body {
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .project-container {
+    flex-direction: column;
+
+    .projects-image-btn {
+      display: none;
+    }
+
+    .details-link {
+      display: inline;
+    }
+  }
+
+  .details-container {
+    margin-left: 0;
+  }
+
+  #large-menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: flex;
+    width: 243px;
+    margin: 0 auto;
+
+    li {
+      margin: 0 10px -10px 0;
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 388px) {
+  .pipe {
+    display: none;
+  }
 }
