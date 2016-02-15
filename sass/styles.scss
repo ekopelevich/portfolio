@@ -71,10 +71,6 @@ header {
     margin-right: 10px;
   }
 
-  #mobile-menu {
-    display: none;
-  }
-
   li {
     cursor: pointer;
   }
@@ -171,6 +167,12 @@ li {
 }
 
 // Media Queries
+
+@media (min-width: 640px) {
+  #mobile-menu {
+    display: none;
+  }
+}
 
 @media (max-width: 640px) {
   html, body {

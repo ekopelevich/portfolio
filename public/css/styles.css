@@ -56,8 +56,6 @@ header {
     color: #fff;
     font-size: 2em;
     margin-right: 10px; }
-  header #mobile-menu {
-    display: none; }
   header li {
     cursor: pointer; }
 
@@ -125,6 +123,10 @@ li {
 
 .ng-leave {
   animation: fadeOutRight 1s; }
+
+@media (min-width: 640px) {
+  #mobile-menu {
+    display: none; } }
 
 @media (max-width: 640px) {
   html, body {
