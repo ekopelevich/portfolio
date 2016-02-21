@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background: url("../assets/subtle_white_mini_waves.png") repeat; }
+  background: url("../assets/ecailles.png") repeat; }
 
 #container {
   display: flex;
