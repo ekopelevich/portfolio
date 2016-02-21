@@ -5,6 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  background: url('../assets/subtle_white_mini_waves.png') repeat;
 }
 
 #container {
@@ -19,28 +20,16 @@ html, body {
   flex-direction: column;
   min-height: 100%;
   height: auto;
-  min-width: 100%;
+  width: 100%;
   margin: 0 auto -40px;
   padding: 0 0 40px;
-  background: url('../assets/subtle_white_mini_waves.png') repeat;
 }
 
 main {
   padding: 20px 0 40px 40px;
   min-height: 95vh;
+  width: 80%;
   overflow: scroll;
-}
-
-footer {
-  min-height: 60px;
-  display: flex;
-  justify-content: center;
-  background-color: #464646;
-  color: #fff;
-  z-index: 1000;
-  p {
-      padding: 10px;
-  }
 }
 
 header {
@@ -71,8 +60,15 @@ header {
     margin-right: 10px;
   }
 
+  ul {
+    margin-top: 30px;
+  }
+
   li {
     cursor: pointer;
+    line-height: 2em;
+    color: #fff;
+    list-style: none;
   }
 }
 
@@ -87,22 +83,8 @@ h3 {
   color: #bdbdbc;
 }
 
-ul {
-  margin-top: 30px;
-}
-
-li {
-  line-height: 2em;
-  color: #fff;
-  list-style: none;
-}
-
 .button {
   margin-right: 10px;
-}
-
-.content {
-  width: 90%;
 }
 
 .project-container {
@@ -147,6 +129,10 @@ li {
   max-width: 100%;
   min-width: 25%;
   margin-bottom: 40px;
+
+  img {
+    margin-bottom: 20px;
+  }
 }
 
 .strong {
@@ -167,14 +153,20 @@ li {
 }
 
 // Media Queries
-
-@media (min-width: 640px) {
+@media (min-width: 660px) {
   #mobile-menu {
     display: none;
   }
+
+  .contact {
+    margin-top: 100px;
+    background-color: rgba(213, 230, 237, .5);
+    padding: 10px;
+    text-align: center;
+  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 660px) {
   html, body {
     flex-direction: column;
   }
@@ -213,13 +205,7 @@ li {
     }
   }
 
-  footer {
-    text-align: center;
-  }
-}
-
-@media (max-width: 388px) {
-  .pipe {
+  .contact {
     display: none;
   }
 }
