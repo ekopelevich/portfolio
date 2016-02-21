@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background: url('../assets/ecailles.png') repeat;
+  background: url('../assets/subtle_dots.png') repeat;
 }
 
 #container {
@@ -15,20 +15,11 @@ html, body {
   height: auto;
 }
 
-#wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  height: auto;
-  width: 100%;
-  margin: 0 auto -40px;
-  padding: 0 0 40px;
-}
-
 main {
-  padding: 20px 0 40px 40px;
+  padding: 40px;
   min-height: 95vh;
-  width: 80%;
+  width: 90%;
+  max-width: 1000px;
   overflow: scroll;
 }
 
@@ -65,10 +56,15 @@ header {
   }
 
   li {
-    cursor: pointer;
     line-height: 2em;
     color: #fff;
     list-style: none;
+  }
+
+  li:hover {
+    cursor: pointer;
+    color: #217fd5;
+    font-weight: 600;
   }
 }
 
@@ -101,6 +97,10 @@ h3 {
   .projects-image-btn {
     display: flex;
     flex-direction: column;
+
+    img {
+      border: 3px solid #92dce0;
+    }
   }
 
   .details-container {
@@ -169,6 +169,11 @@ h3 {
 @media (max-width: 660px) {
   html, body {
     flex-direction: column;
+  }
+
+  main {
+    width: 95%;
+    overflow: visible;
   }
 
   header {
