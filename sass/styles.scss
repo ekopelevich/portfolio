@@ -25,10 +25,14 @@ main {
 
 header {
   color: #fff;
-  padding: 20px;
+  padding: 40px;
   background: url('../assets/background.jpg');
   box-shadow: 5px 0 5px #888;
   z-index: 100;
+
+  h1, h2, p, div {
+    margin: 0 20px;
+  }
 
   h1 {
     font-size: 2em;
@@ -48,7 +52,7 @@ header {
   .zmdi {
     color: #fff;
     font-size: 2em;
-    margin-right: 10px;
+    margin: 10px 10px 0 0;
   }
 
   ul {

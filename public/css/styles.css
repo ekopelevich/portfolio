@@ -22,10 +22,12 @@ main {
 
 header {
   color: #fff;
-  padding: 20px;
+  padding: 40px;
   background: url("../assets/background.jpg");
   box-shadow: 5px 0 5px #888;
   z-index: 100; }
+  header h1, header h2, header p, header div {
+    margin: 0 20px; }
   header h1 {
     font-size: 2em;
     font-weight: 600; }
@@ -38,7 +40,7 @@ header {
   header .zmdi {
     color: #fff;
     font-size: 2em;
-    margin-right: 10px; }
+    margin: 10px 10px 0 0; }
   header ul {
     margin-top: 30px; }
   header li {
